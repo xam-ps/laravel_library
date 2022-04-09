@@ -27,7 +27,7 @@
                         @foreach ($customers as $customer)
                             <a href="{{ route('customers.show', ['id' => $customer->id]) }}">
                                 <li>
-                                    {{ $customer->full_name }} >
+                                    {{ $customer->full_name }}
                                 </li>
                             </a>
                             <br>

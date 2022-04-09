@@ -20,8 +20,8 @@
                         <h3>Booklist</h3>
                         <ul>
                             @foreach ($books as $book)
-                                <li>
-                                    {{ $book->name }}
+                            <li>
+                                    <p>{{ $book->name }}</p>
                                     <form action="{{ route('customers.checkin', ['customerId' => $customer->id, 'bookId' => $book->id]) }}" method="POST">
                                         @csrf
                                         <x-button class="ml-3">
